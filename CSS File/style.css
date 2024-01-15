@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Lato:wght@400;700;900&family=Merriweather:wght@400;900&family=Mulish:wght@400;700;800&family=Open+Sans:wght@400;600;700;800&family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: mulish;
+}
+
+.container {
+      width: 1170px;
+      margin: 0 auto;
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+li {
+      list-style-type: none;
+}
+
+a {
+      text-decoration: none;
+}
+
+.btn {
+      border-radius: 8px;
+      background: #FF5400;
+      color: #FFF;
+      padding: 14px 34px;
+}
+
+.common-heading {
+      color: #131318;
+      font-size: 40px;
+      font-weight: 800;
+}
+
+.common-text {
+      color: rgba(19, 19, 24, 0.70);
+      font-size: 1em;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+}
+
+/* common css style end */
+/* nav section start */
+nav {
+      margin: 50px 0;
+}
+
+nav .nav-items {
+      justify-content: space-between;
+      align-items: center;
+}
+
+nav .nav-logo h2 {
+      color: #131318;
+      font-size: 2.25em;
+      font-style: normal;
+      font-weight: 800;
+      padding-left: 16px;
+}
+
+nav .nav-logo span {
+      color: #FF5400;
+
+}
+
+nav ul {
+      gap: 44px;
+}
+
+nav ul li a {
+      color: #424247;
+      font-size: 1.1em;
+      font-weight: 400;
+      transition: 0.3s;
+}
+
+nav ul li a:hover {
+      color: #FF5400;
+}
+
+/* nav section end */
+/* banner section start */
+#banner .bg-img {
+      background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(./../Images/Group\ 13\ \(1\)\ \(1\).png);
+      width: 1170px;
+      height: 500px;
+      border-radius: 1em;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+}
+
+#banner .banner-items h1 {
+      color: #FFF;
+      font-size: 4em;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+}
+
+#banner .banner-items {
+      text-align: center;
+}
+
+#banner .banner-items p {
+      padding: 24px 245px 20px 245px;
+      color: #FFF;
+}
+
+#banner .banner-btn a {
+      background-color: #FFF;
+      color: rgba(19, 19, 24, 0.50);
+      font-size: 16px;
+      border-radius: 8px;
+      font-weight: 400;
+      margin: 13px 10px;
+      display: inline-block;
+      padding: 16px 70px 16px 16px;
+      transition: 0.5s;
+}
+
+#banner .banner-btn {
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.30);
+      width: 65%;
+      margin: 0 auto;
+}
+
+#banner .banner-btn a:hover {
+      background-color: #FF5400;
+      color: #FFF;
+}
+
+/* banner section end */
+/* our tour section start */
+#our-tour {
+      margin: 100px 0;
+}
+
+#our-tour .tour-items {
+      align-items: center;
+}
+
+#our-tour .tour-info {
+      width: 50%;
+      padding-right: 53px;
+}
+
+#our-tour .tour-info li {
+      list-style-type: disc;
+      margin-left: 30px;
+}
+
+#our-tour .tour-img {
+      width: 50%;
+      text-align: end;
+}
+
+#our-tour .tour-info p {
+      margin: 24px 0;
+}
+
+#our-tour .btn {
+      display: inline-block;
+      margin-top: 32px;
+      transition: 0.5s;
+}
+
+#our-tour .btn:hover {
+      background-color: #424247;
+}
+
+/* our tour end */
+/* destination section start */
+#destination .destination-info {
+      text-align: center;
+      padding: 0 260px;
+}
+
+#destination .destination-info p {
+      margin: 24px 0 48px 0;
+}
+
+.destination-img {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      position: relative;
+}
+
+.destination-img img {
+      width: 100%;
+}
+
+.destination-img .img-1 {
+      grid-column-start: 1;
+      grid-column-end: 7;
+}
+
+.destination-img .img-2 {
+      grid-column-start: 7;
+      grid-column-end: 13;
+}
+
+.destination-img .img-3 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+}
+
+.destination-img .img-4 {
+      grid-column-start: 5;
+      grid-column-end: 10;
+}
+
+.destination-img .img-5 {
+      grid-column-start: 10;
+      grid-column-end: 13;
+
+}
+
+.destination-img .img-6 {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      position: relative;
+}
+
+.destination-img .img-7 {
+      grid-column-start: 6;
+      grid-column-end: 13;
+      position: relative;
+}
+
+.destination-img span {
+      position: absolute;
+      color: #FFF;
+      font-size: 28px;
+      font-weight: 800;
+}
+
+.destination-img .mal {
+      top: 120px;
+      left: 200px;
+}
+
+.destination-img .indo {
+      top: 120px;
+      right: 232px;
+}
+
+.destination-img .sri {
+      top: 450px;
+      left: 130px;
+}
+
+.destination-img .ame {
+      top: 450px;
+      left: 525px;
+}
+
+.destination-img .kash {
+      top: 450px;
+      right: 80px;
+}
+
+.destination-img .ban {
+      top: 135px;
+      left: 150px;
+}
+
+.destination-img .bandor {
+      top: 135px;
+      left: 240px;
+}
+
+/* destination section end  */
+
+/* choose us section start */
+#choose-us {
+      margin-top: 100px;
+      margin-bottom: 132px;
+}
+
+#choose-us .choose-info {
+      text-align: center;
+      padding: 0 264px;
+}
+
+#choose-us .choose-info p {
+      margin-bottom: 80px;
+      margin-top: 24px;
+}
+
+#choose-us .choose-card {
+      justify-content: space-between;
+}
+
+#choose-us .choose-card .card-1 {
+      border: 1px solid rgba(251, 181, 99, 0.20);
+      background: rgba(251, 181, 99, 0.05);
+}
+
+#choose-us .choose-card .card-2 {
+      border: 1px solid rgba(41, 206, 246, 0.20);
+      background: rgba(41, 206, 246, 0.05);
+}
+
+#choose-us .last-card .card-3 {
+      margin: 24px auto;
+      border: 1px solid rgba(233, 68, 68, 0.20);
+      background: rgba(233, 68, 68, 0.05);
+}
+
+#choose-us .card-1,
+#choose-us .card-2,
+#choose-us .card-3 {
+      padding: 32px 55px 32px 32px;
+      border-radius: 16px;
+      width: 48%;
+
+}
+
+#choose-us .card-1 h3,
+#choose-us .card-2 h3,
+#choose-us .card-3 h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+}
+
+/* choose us section end */
+#discount .discount-info {
+      text-align: center;
+}
+
+#discount .discount-img img {
+      margin-top: 24px;
+      position: relative;
+}
+
+#discount .discount-card {
+      width: 40%;
+      border-radius: 16px;
+      border: 2px solid #FFF;
+      background: rgba(255, 255, 255, 0.80);
+      padding: 55px 77px 63px 56px;
+
+}
+
+#discount .discount-card button {
+      display: block;
+      margin-top: 10px;
+      border-radius: 8px;
+      background: #FF5400;
+      font-size: 24px;
+      border: none;
+}
+#discount .discount-card button a{
+      color: #FFF;
+      display:inline-block;
+      padding: 10px 20px;
+}
+#discount .discount-card h4 {
+      color: #131318;
+      font-size: 24px;
+      font-weight: 800;
+}
+
+#discount .discount-card span {
+      color: #FF5400;
+      font-size: 20px;
+      font-weight: 800;
+}
+
+#discount .discount-img .img-1 {
+      position: relative;
+}
+
+#discount .discount-card p {
+      padding: 16px 0;
+}
+
+#discount .discount-img .img-2 {
+      position: relative;
+}
+
+#discount .discount-img .img-3 {
+      position: relative;
+}
+
+#discount #card-1 {
+      position: absolute;
+      top: 70px;
+      right: 50px;
+}
+
+#discount #card-2 {
+      position: absolute;
+      top: 70px;
+      left: 50px;
+}
+
+#discount #card-3 {
+      position: absolute;
+      top: 70px;
+      right: 50px;
+}
