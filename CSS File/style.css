@@ -89,6 +89,10 @@ nav ul li a:hover {
       color: #FF5400;
 }
 
+nav .icon {
+      display: none;
+}
+
 /* nav section end */
 /* banner section start */
 #banner .bg-img {
@@ -374,6 +378,7 @@ nav ul li a:hover {
       background: #FF5400;
       font-size: 24px;
       border: none;
+      transition: 0.5s;
 }
 
 #discount .discount-card button a {
@@ -437,7 +442,15 @@ nav ul li a:hover {
       bottom: -70px;
       left: 500px;
 }
-
+#discount button:hover{
+      background-color: #424247;
+}
+#discount .btn{
+      transition: 0.5s;
+}
+#discount .btn:hover{
+      background-color: #424247;
+}
 /* discount section end */
 /* place section start */
 #perfect-place {
@@ -471,7 +484,12 @@ nav ul li a:hover {
 #perfect-place .place-info {
       padding-right: 30px;
 }
-
+#perfect-place .btn{
+      transition: 0.5s;
+}
+#perfect-place .btn:hover{
+      background-color: #424247;
+}
 /* perfect-place section end */
 /* review section start */
 #ratting {
@@ -530,9 +548,10 @@ nav ul li a:hover {
 
 /* retting section end */
 /* newsletter section start */
-#newsletter{
+#newsletter {
       margin-bottom: 100px;
 }
+
 #newsletter .newsletter-items {
       justify-content: space-between;
       align-items: center;
@@ -540,7 +559,7 @@ nav ul li a:hover {
 
 #newsletter input {
       display: block;
-      padding: 10px 20px;
+      padding: 15px 20px;
       width: 80%;
       margin: 24px;
       border: none;
@@ -552,8 +571,11 @@ nav ul li a:hover {
       background-color: #FF5400;
       color: #FFF;
       font-size: 20px;
+      transition: 0.3s;
 }
-
+#newsletter input[type=submit]:hover {
+      background-color: #424247;
+}
 #newsletter .newsletter-info {
       border-radius: 16px;
       border: 1px solid #FF5400;
@@ -586,29 +608,384 @@ nav ul li a:hover {
       right: 10px;
       color: #FFF;
 }
+
 /* news letter section end */
 /* footer section start */
-#footer{
-      background-color:#afafb3
+#footer {
+      background-color: #afafb3
 }
-footer .footer-items{
+
+footer .footer-items {
       text-align: center;
       padding: 100px 0;
 }
-footer .footer-items h2{
+
+footer .footer-items h2 {
       display: inline;
       font-size: 50px;
 }
-footer .footer-items p{
+
+footer .footer-items p {
       margin: 15px 332px 30px 332px;
 }
-footer .footer-items .social-icon i{
+
+footer .footer-items .social-icon i {
       padding: 15px;
       font-size: 20px;
 }
-footer hr{
+
+footer hr {
       width: 60%;
       margin: 0 auto;
       margin-bottom: 50px;
 }
+
 /* footer section end */
+
+/* responsive style start */
+@media screen and (max-width: 596px) {
+      .container {
+            width: 100%;
+      }
+
+      .common-heading {
+            font-size: 20px;
+      }
+
+      .common-text {
+            font-size: 14px;
+      }
+
+      nav {
+            padding: 0 20px;
+      }
+
+      nav ul li {
+            display: none;
+      }
+
+      nav .icon {
+            display: block;
+            font-size: 20px;
+
+      }
+
+      nav .nav-items {
+            display: flex;
+            flex-direction: row;
+      }
+
+      nav .nav-items h2 {
+
+            font-size: 30px;
+      }
+
+      nav nav-logo {
+            flex-direction: row;
+      }
+
+      /* banner section */
+      #banner .bg-img {
+            width: 335px;
+            height: 483px;
+            flex-shrink: 0;
+            background-position: center;
+            margin-left: 20px;
+      }
+
+      #banner .banner-items h1 {
+            font-size: 22px;
+            padding-top: 20px;
+      }
+
+      #banner .banner-items p {
+            padding: 10px;
+      }
+
+      #banner .banner-btn {
+            width: 90%;
+      }
+
+      #banner .banner-btn a {
+            width: 255px;
+            height: 52px;
+
+      }
+
+      /* our tour section */
+      #our-tour {
+            margin-top: 24px;
+      }
+
+      #our-tour .tour-items {
+            flex-direction: column;
+            align-items: baseline;
+      }
+
+      #our-tour .tour-info {
+            width: 100%;
+            padding: 10px 20px;
+      }
+
+      #our-tour .tour-img {
+            width: 100%;
+            text-align: center;
+      }
+
+      #our-tour .tour-img img {
+            width: 335px;
+            height: 342px;
+      }
+
+      /* destination section */
+      #destination .destination-info {
+
+            padding: 20px;
+      }
+
+      #destination .destination-info p {
+            margin: 0;
+      }
+
+      .destination-img {
+            display: block;
+            gap: 30px;
+            padding: 20px;
+      }
+
+      .destination-img img {
+            margin-bottom: 16px;
+      }
+
+      .destination-img .mal {
+            top: 90px;
+            left: 130px;
+      }
+
+      .destination-img .indo {
+            top: 285px;
+            left: 130px;
+      }
+
+      .destination-img .sri {
+            top: 525px;
+            left: 130px;
+      }
+
+      .destination-img .ame {
+            top: 770px;
+            left: 105px;
+      }
+
+      .destination-img .kash {
+            top: 1080px;
+            right: 130px;
+      }
+
+      .destination-img .ban {
+            top: 90px;
+            left: 95px;
+      }
+
+      .destination-img .bandor {
+            top: 60px;
+            left: 90px;
+      }
+
+      /* choose us section */
+      #choose-us {
+            margin: 0;
+      }
+
+      #choose-us .choose-info {
+            text-align: center;
+            padding: 20px;
+      }
+
+      #choose-us .choose-info p {
+            margin-bottom: 0;
+            margin-top: 10px;
+      }
+
+      #choose-us .choose-card {
+            flex-direction: column;
+      }
+
+      #choose-us .choose-card .card-1,
+      #choose-us .choose-card .card-2 {
+            width: 90%;
+
+      }
+
+      #choose-us .last-card .card-3 {
+            margin: 0;
+            width: 100%;
+      }
+
+      #choose-us .last-card {
+            margin: 16px;
+      }
+
+      #choose-us .card-1 {
+            margin: 16px;
+      }
+
+      .card-2 {
+            margin: 0 16px;
+      }
+
+      /* discount section start */
+      #discount .discount-info p {
+            padding: 0;
+      }
+
+      .discount-img img {
+            width: 335px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 16px;
+      }
+
+      .img-1,
+      .img-2,
+      .img-3 {
+            text-align: center;
+      }
+
+      #discount {
+            margin-bottom: 100px;
+      }
+
+      #discount .discount-card {
+            width: 80%;
+      }
+
+      #discount .discount-card {
+            padding: 10px 40px;
+            text-align: start;
+      }
+
+      #discount .discount-card h4 {
+            font-size: 20px;
+      }
+
+      #discount .discount-card p {
+            font-size: 14px;
+      }
+
+      #discount #card-1 {
+            top: 240px;
+            right: 36px;
+      }
+
+      #discount #card-2 {
+            position: absolute;
+            top: 190px;
+            left: 38px;
+      }
+
+      #discount #card-3 {
+            position: absolute;
+            top: 190px;
+            right: 35px;
+      }
+
+      #discount .discount-items .btn {
+            bottom: -70px;
+            left: 20px;
+      }
+      /* discount section end */
+      /* place section start */
+      #perfect-place .place-items {
+            flex-direction: column;
+      }
+
+      #perfect-place .place-info,
+      #perfect-place .place-video {
+            width: 100%
+      }
+
+      #perfect-place .place-video {
+            margin: 30px 20px;
+      }
+
+      #perfect-place .place-info {
+            padding: 0 30px;
+      }
+
+      #perfect-place iframe {
+            width: 320px;
+            height: 300px;
+      }
+
+      #perfect-place .btn {
+            margin-left: -25px;
+      }
+
+      /* ratting section start */
+      #ratting .public-review p {
+            padding: 0 20px;
+      }
+
+      #ratting .review-items {
+            flex-direction: column;
+      }
+
+      .review-card-1,
+      .review-card-2,
+      .review-card-3,
+      .review-card-4 {
+            width: 90%;
+            margin-top: 20px;
+      }
+
+      #ratting {
+            margin-bottom: 20px;
+      }
+
+      #newsletter .newsletter-items {
+            flex-direction: column;
+            align-items: baseline;
+            margin-left: 20px;
+      }
+
+      #newsletter .newsletter-info {
+            width: 90%;
+      }
+
+      #newsletter img {
+            width: 335px;
+            height: 300px;
+            margin-top: 20px;
+      }
+
+      #newsletter .discount {
+            top: 157px;
+      }
+
+      #newsletter {
+            margin-bottom: 20px;
+      }
+
+      footer .footer-items {
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+      }
+      footer .footer-items h2 {
+            font-size: 30px;
+            padding-left: 10px;
+      }
+
+      footer .footer-items p {
+            margin: 10px;
+      }
+
+      footer img {
+            width: 28.724px;
+            height: 33.516px;
+      }
+      footer hr{
+            margin-bottom: 0;
+      }
+}
