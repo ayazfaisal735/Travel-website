@@ -715,6 +715,7 @@ footer hr {
       /* our tour section */
       #our-tour {
             margin-top: 24px;
+            margin-bottom: 24px;
       }
 
       #our-tour .tour-items {
