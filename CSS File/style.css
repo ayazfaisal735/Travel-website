@@ -341,8 +341,16 @@ nav ul li a:hover {
 }
 
 /* choose us section end */
+#discount {
+      margin-bottom: 180px;
+}
+
 #discount .discount-info {
       text-align: center;
+}
+
+#discount .discount-info p {
+      padding: 24px 264px;
 }
 
 #discount .discount-img img {
@@ -367,11 +375,13 @@ nav ul li a:hover {
       font-size: 24px;
       border: none;
 }
-#discount .discount-card button a{
+
+#discount .discount-card button a {
       color: #FFF;
-      display:inline-block;
+      display: inline-block;
       padding: 10px 20px;
 }
+
 #discount .discount-card h4 {
       color: #131318;
       font-size: 24px;
@@ -417,3 +427,188 @@ nav ul li a:hover {
       top: 70px;
       right: 50px;
 }
+
+#discount .discount-items {
+      position: relative;
+}
+
+#discount .discount-items .btn {
+      position: absolute;
+      bottom: -70px;
+      left: 500px;
+}
+
+/* discount section end */
+/* place section start */
+#perfect-place {
+      margin-bottom: 100px;
+}
+
+#perfect-place .place-info,
+#perfect-place .place-video {
+      width: 50%;
+}
+
+#perfect-place .place-video iframe {
+      border-radius: 16px;
+}
+
+#perfect-place .place-items {
+      align-items: center;
+}
+
+#perfect-place .place-info p {
+      margin-top: 24px;
+      margin-bottom: 24px;
+}
+
+#perfect-place .place-info li {
+      list-style-type: disc;
+      margin-left: 30px;
+      margin-bottom: 30px;
+}
+
+#perfect-place .place-info {
+      padding-right: 30px;
+}
+
+/* perfect-place section end */
+/* review section start */
+#ratting {
+      margin-bottom: 100px;
+}
+
+#ratting .review-items {
+      /* gap: 20px; */
+      align-items: center;
+      justify-content: space-between;
+
+}
+
+.review-card-1,
+.review-card-2,
+.review-card-3,
+.review-card-4 {
+      width: 23%;
+      border-radius: 16px;
+      border: 1px solid rgba(41, 206, 246, 0.20);
+      background: rgba(41, 206, 246, 0.05);
+      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+
+#ratting h5,
+#ratting p {
+      padding: 5px 10px;
+}
+
+#ratting h5 {
+      font-size: large;
+
+}
+
+#ratting .review-items img {
+      width: 100%;
+      border-radius: 16px 16px 0 0;
+}
+
+#ratting span {
+      padding: 10px;
+}
+
+#ratting span i {
+      padding-bottom: 20px;
+}
+
+#ratting .public-review {
+      text-align: center;
+}
+
+#ratting .public-review p {
+      padding: 10px 120px 30px 120px;
+}
+
+/* retting section end */
+/* newsletter section start */
+#newsletter{
+      margin-bottom: 100px;
+}
+#newsletter .newsletter-items {
+      justify-content: space-between;
+      align-items: center;
+}
+
+#newsletter input {
+      display: block;
+      padding: 10px 20px;
+      width: 80%;
+      margin: 24px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(19, 19, 24, 0.05);
+}
+
+#newsletter input[type=submit] {
+      background-color: #FF5400;
+      color: #FFF;
+      font-size: 20px;
+}
+
+#newsletter .newsletter-info {
+      border-radius: 16px;
+      border: 1px solid #FF5400;
+      width: 40%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+}
+
+#newsletter .newsletter-info h3 {
+      padding-top: 40px;
+      padding-left: 40px;
+}
+
+#newsletter .newsletter-info p {
+      padding: 16px 84px 0px 40px
+}
+
+#newsletter .newsletter-img {
+      position: relative;
+}
+
+#newsletter .discount {
+      position: absolute;
+      text-align: center;
+      border-radius: 16px;
+      background: #FF5400;
+      padding: 40px;
+      transform: rotate(-19.628deg);
+      top: 260px;
+      right: 10px;
+      color: #FFF;
+}
+/* news letter section end */
+/* footer section start */
+#footer{
+      background-color:#afafb3
+}
+footer .footer-items{
+      text-align: center;
+      padding: 100px 0;
+}
+footer .footer-items h2{
+      display: inline;
+      font-size: 50px;
+}
+footer .footer-items p{
+      margin: 15px 332px 30px 332px;
+}
+footer .footer-items .social-icon i{
+      padding: 15px;
+      font-size: 20px;
+}
+footer hr{
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+}
+/* footer section end */
